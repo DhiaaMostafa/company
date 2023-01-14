@@ -1,20 +1,3 @@
-@extends('layouts.app')
-
-@section('content')
-<a class="dropdown-item" href="{{ route('logout') }}"
-onclick="event.preventDefault();
-              document.getElementById('logout-form').submit();">
- {{ __('Logout') }}
-</a>
-
-<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
- @csrf
-</form>
-@endsection
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
@@ -122,7 +105,7 @@ onclick="event.preventDefault();
        
        <nav class="navbar navbar-expand-lg navigation" id="navbar">
           <div class="container">
-             <a class="navbar-brand" href="https://musanedunited.sa">
+             <a class="navbar-brand" href="#">
                 <img src="https://musanedunited.sa/uploads/logo.png" alt="" class="img-fluid">
              </a>
                 
@@ -135,37 +118,37 @@ onclick="event.preventDefault();
              <div class="collapse navbar-collapse" id="navbarmain">
                 <ul class="navbar-nav ml-auto">
                    <li  class="nav-item">
-       <a  class="nav-link"  href="https://musanedunited.sa"  target="_self" >الصفحة الرئيسية</a>
+       <a  class="nav-link"  href="#"  target="_self" >الصفحة الرئيسية</a>
     </li>
     
      
        
     <li  class="nav-item">
-       <a  class="nav-link"  href="https://musanedunited.sa/page/mn-nhn"  target="_self" >من نحن</a>
+       <a  class="nav-link"  href="#"  target="_self" >من نحن</a>
     </li>
     
      
        
     <li  class="nav-item">
-       <a  class="nav-link"  href="https://musanedunited.sa/priceing"  target="_self" >الاسعار</a>
+       <a  class="nav-link"  href="#"  target="_self" >الاسعار</a>
     </li>
     
      
        
     <li  class="nav-item">
-       <a  class="nav-link"  href="https://musanedunited.sa/service"  target="_self" >خدماتنا</a>
+       <a  class="nav-link"  href="#"  target="_self" >خدماتنا</a>
     </li>
     
      
        
     <li  class="nav-item">
-       <a  class="nav-link"  href="https://musanedunited.sa/contact"  target="_self" >تواصل معنا</a>
+       <a  class="nav-link"  href="#"  target="_self" >تواصل معنا</a>
     </li>
     
      
        
     <li  class="nav-item">
-       <a  class="nav-link"  href="https://musanedunited.sa/login"  target="_self" >تسجيل الدخول</a>
+        <a  class="nav-link"  href="#"  target="_self" >تسجيل الدخول</a>
     </li>
     
                  
@@ -211,7 +194,7 @@ onclick="event.preventDefault();
                 
                 <h4 class="mb-3">لوحة تحكم سهلة ومتكاملة مع مدير اعمال متخصص لكل مجموعة</h4>
                 <p class="mb-4">تعلمنا من خبرتنا كثرة المميزات قد تعيق اعمالك اليومية , لذا طورنا لوحة تحكم سهلة وبسيطة , لتقوم باتمام اعمالك اليومية , بسهولة وسرعة بدون الحاجة للتعامل مع نظام معقد.</p>
-                            <a href="https://musanedunited.sa/priceing" class="btn btn-main btn-round-full">سجل الان</a>
+                            <a href="#" class="btn btn-main btn-round-full">سجل الان</a>
                           </div>
             
               <div class="feature-item mb-5 mb-lg-0">
@@ -226,7 +209,7 @@ onclick="event.preventDefault();
     نساندك لحياة أفضل
     انشأ متجرك الالكترونى وبادر بجنى الارباح
     مدير اعمال متخصص لكل مجموعة</p>
-                            <a href="https://musanedunited.sa/register" class="btn btn-main btn-round-full">ابدأ الان</a>
+                            <a href="#" class="btn btn-main btn-round-full">ابدأ الان</a>
                           </div>
             
               <div class="feature-item mb-5 mb-lg-0">
@@ -237,7 +220,7 @@ onclick="event.preventDefault();
                 <h4 class="mb-3">مسرعة أعمال منصة مساند المتحدة</h4>
                 <p class="mb-4">لتكون المسرعة الاولى الكترونيا , حيث تهدف الى تسريع الى عجلة تنمية للمنشأت الصغيرة والمتوسطة عبر تطبيق افضل المعايير المحلية والعالمية .
     وتوفير البرامج التدريبية والجلسات الاستشارية والارشادية اضافة الى الفرص الاستثمارية المتاحة للمشتركين</p>
-                            <a href="https://musanedunited.sa/register" class="btn btn-main btn-round-full">سجل الان</a>
+                            <a href="#" class="btn btn-main btn-round-full">سجل الان</a>
                           </div>
             </div>
           </div>
@@ -282,13 +265,7 @@ onclick="event.preventDefault();
                 <p>عملاء14763</p>
               </div>
             </div>
-            <!--<div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="counter-stat">
-                <i class="icofont-star"></i>
-                <span class="h3">800</span>+
-                <p>مراجعات</p>
-              </div>
-            </div>-->
+           
             
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="counter-stat">
@@ -375,38 +352,7 @@ onclick="event.preventDefault();
             <section class="" id="gallery">
               <div class="container">
                 <div class="row">
-                  {{-- <div class="col-lg-12">
-                    <div class="portfolio__slide gallery_part">
-                                         <a href="https://saka-cart.&quot;mussanad.ofertasbooking.com&quot;/">
-                        <div class="port__card">
-                          <div class="portfolio__img">
-                            <img src="https://musanedunited.sa/uploads/admin/1/2021/03/1615211329.webp"   alt="">
-                          </div>                                
-                        </div>
-                      </a>
-                                         <a href="https://bazar.&quot;mussanad.ofertasbooking.com&quot;/">
-                        <div class="port__card">
-                          <div class="portfolio__img">
-                            <img src="https://musanedunited.sa/uploads/admin/1/2021/03/1615211297.webp"   alt="">
-                          </div>                                
-                        </div>
-                      </a>
-                                         <a href="https://bigbag.&quot;mussanad.ofertasbooking.com&quot;">
-                        <div class="port__card">
-                          <div class="portfolio__img">
-                            <img src="https://musanedunited.sa/uploads/admin/1/2021/03/1615211275.webp"   alt="">
-                          </div>                                
-                        </div>
-                      </a>
-                                         <a href="http://arafa-cart.&quot;mussanad.ofertasbooking.com&quot;">
-                        <div class="port__card">
-                          <div class="portfolio__img">
-                            <img src="https://musanedunited.sa/uploads/admin/1/2021/03/1615208210.webp"   alt="">
-                          </div>                                
-                        </div>
-                      </a>
-                                       </div>
-                  </div> --}}
+                 
                   <div class="col-lg-3">
                      <div class="port__card">
                         <div class="portfolio__img">
@@ -490,7 +436,7 @@ onclick="event.preventDefault();
           </ul>
          
            <p> السعر 289 بالإضافة إلى 15% الضريبة</p>
-          <a  style="background: #42155c" href="https://musanedunited.sa/merchant/register/1" class="btn site_color text-white btn-block p-2 shadow rounded-pill">سجل الان</a>
+          <a  style="background: #42155c" href="#" class="btn site_color text-white btn-block p-2 shadow rounded-pill">سجل الان</a>
          
          </div>
         </div>
@@ -602,56 +548,7 @@ onclick="event.preventDefault();
                   <button class="btn  rightLst">></button>
               </div>
          </div>
-        {{-- <div class="row clients-logo">
-
-
-                <div class="col-lg-2">
-            <div class="client-thumb">
-             <a href="#" target="_blank"> <img src="https://musanedunited.sa/uploads/1/2023/01/1673433911.png" height="50" alt="" class="img-fluid"></a>
-            </div>
-          </div>
-                <div class="col-lg-2">
-            <div class="client-thumb">
-             <a href="#" target="_blank"> <img src="https://musanedunited.sa/uploads/1/2023/01/1673433891.png" height="50" alt="" class="img-fluid"></a>
-            </div>
-          </div>
-                <div class="col-lg-2">
-            <div class="client-thumb">
-             <a href="#" target="_blank"> <img src="https://musanedunited.sa/uploads/1/2023/01/1673433835.jpg" height="50" alt="" class="img-fluid"></a>
-            </div>
-          </div>
-                <div class="col-lg-2">
-            <div class="client-thumb">
-             <a href="#" target="_blank"> <img src="https://musanedunited.sa/uploads/1/2023/01/1673433814.png" height="50" alt="" class="img-fluid"></a>
-            </div>
-          </div>
-                <div class="col-lg-2">
-            <div class="client-thumb">
-             <a href="#" target="_blank"> <img src="https://musanedunited.sa/uploads/1/2023/01/1673433792.jpg" height="50" alt="" class="img-fluid"></a>
-            </div>
-          </div>
-                <div class="col-lg-2">
-            <div class="client-thumb">
-             <a href="#" target="_blank"> <img src="https://musanedunited.sa/uploads/1/2023/01/1673433760.png" height="50" alt="" class="img-fluid"></a>
-            </div>
-          </div>
-                <div class="col-lg-2">
-            <div class="client-thumb">
-             <a href="#" target="_blank"> <img src="https://musanedunited.sa/uploads/1/2023/01/1673433717.jpg" height="50" alt="" class="img-fluid"></a>
-            </div>
-          </div>
-                <div class="col-lg-2">
-            <div class="client-thumb">
-             <a href="#" target="_blank"> <img src="https://musanedunited.sa/uploads/1/2023/01/1673433696.jpg" height="50" alt="" class="img-fluid"></a>
-            </div>
-          </div>
-                <div class="col-lg-2">
-            <div class="client-thumb">
-             <a href="#" target="_blank"> <img src="https://musanedunited.sa/uploads/1/2023/01/1673433666.png" height="50" alt="" class="img-fluid"></a>
-            </div>
-          </div>
-              </div>
-        </div> --}}
+        
     </section>
     
     
@@ -667,7 +564,7 @@ onclick="event.preventDefault();
                 <div class="widget mb-5 mb-lg-0">
                    <div class="logo mb-4">
                     
-                       <a href="https://musanedunited.sa"><img  class="img-fluid" src="https://musanedunited.sa/uploads/logo.png" alt="mussanad" ></a>
+                       <a href="#"><img  class="img-fluid" src="https://musanedunited.sa/uploads/logo.png" alt="mussanad" ></a>
                    </div>
                                                  <p>{الرقم الضريبى: 103220002499355 </br> السجل التجارى 4030494161 </br> ترخيص منشأتى 525 </br> منصة مساند المتحدة مسجلة براءة اختراع فى الهيئة السعودية للملكية الفكرية}</p>
     
@@ -689,13 +586,13 @@ onclick="event.preventDefault();
     
        <ul class="list-unstyled footer-menu lh-35">
            
-          <li><a  class="active"  href="https://musanedunited.sa"  target="_self" >الأكاديمية</a></li>
+          <li><a  class="active"  href="#"  target="_self" >الأكاديمية</a></li>
            
-          <li><a  href="https://musanedunited.sa/contact"  target="_self" >مساعدة</a></li>
+          <li><a  href="#"  target="_self" >مساعدة</a></li>
            
-          <li><a  href="https://musanedunited.sa/contact"  target="_self" >تواصل اجتماعي</a></li>
+          <li><a  href="#"  target="_self" >تواصل اجتماعي</a></li>
            
-          <li><a  href="https://musanedunited.sa/contact"  target="_self" >أدوات</a></li>
+          <li><a  href="#"  target="_self" >أدوات</a></li>
              </ul>
     </div>
     
@@ -710,11 +607,11 @@ onclick="event.preventDefault();
            
           <li><a  href="#about_us"  target="_self" >معلومات عنا</a></li>
            
-          <li><a  href="https://musanedunited.sa/contact"  target="_self" >برنامج الشركاء</a></li>
+          <li><a  href="#"  target="_self" >برنامج الشركاء</a></li>
            
           <li><a  href="#priceing"  target="_self" >التسعير</a></li>
            
-          <li><a  href="https://musanedunited.sa/contact"  target="_self" >بوابة الدفع</a></li>
+          <li><a  href="#"  target="_self" >بوابة الدفع</a></li>
              </ul>
     </div>
     
@@ -726,11 +623,11 @@ onclick="event.preventDefault();
     
        <ul class="list-unstyled footer-menu lh-35">
            
-          <li><a  href="https://musanedunited.sa/page/terms-and-condition"  target="_self" >سياسات</a></li>
+          <li><a  href="#"  target="_self" >سياسات</a></li>
            
-          <li><a  href="https://musanedunited.sa/page/terms-and-condition"  target="_self" >سياسة الخدمة</a></li>
+          <li><a  href="#"  target="_self" >سياسة الخدمة</a></li>
            
-          <li><a  href="https://musanedunited.sa/page/terms-and-condition"  target="_self" >سياسة الاسترجاع</a></li>
+          <li><a  href="#"  target="_self" >سياسة الاسترجاع</a></li>
              </ul>
     </div>
     
